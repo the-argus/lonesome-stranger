@@ -1,0 +1,32 @@
+body {
+  font-family: "Liberation Serif", sans-serif;
+}
+table, th, td {
+  border: 1px solid;
+}
+table {
+  border-collapse: collapse;
+}
+td, th {
+  padding: 0.5rem;
+}
+
+h1 {
+  font-size: 3.25rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.75rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1rem;
+  font-style: bold;
+}
