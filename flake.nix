@@ -17,6 +17,16 @@
         python310Packages =
           super.python310Packages
           // {
+            # certifi = super.python310Packages.buildPythonPackage rec {
+            #   pname = "certifi";
+            #   version = "2018.01.18";
+            #   src = super.fetchFromGitHub {
+            #     owner = "certifi";
+            #     repo = "python-certifi";
+            #     rev = version;
+            #     sha256 = "sha256-GKeqJGXOcqqH0PYXlJOSAW9NoKL+BXzA8ZvqC1cMW4A=";
+            #   };
+            # };
             fdfgen = super.python310Packages.buildPythonPackage rec {
               pname = "fdfgen";
               version = "0.16.1";
@@ -32,16 +42,6 @@
               src = super.python310Packages.fetchPypi {
                 inherit pname version;
                 sha256 = "sha256-OFYmQ6e8lNm/VumTC0kn5Ok7XR0JF/aXpkVNtaHBpTM=";
-              };
-            };
-            certifi = super.python310Packages.buildPythonPackage rec {
-              pname = "certifi";
-              version = "2018.01.18";
-              src = super.fetchFromGitHub {
-                owner = "certifi";
-                repo = "python-certifi";
-                rev = version;
-                sha256 = "sha256-GKeqJGXOcqqH0PYXlJOSAW9NoKL+BXzA8ZvqC1cMW4A=";
               };
             };
           };

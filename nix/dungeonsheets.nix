@@ -17,10 +17,7 @@ python310Packages.buildPythonPackage {
     certifi
     fdfgen
     EBookLib
-    # (reportlab.overrideAttrs (_: {
-    #   patches = [];
-    #   buildInputs = with python310Packages; [(freetype.overrideAttrs (oldArgs: {dontDisableStatic = true;})) pillow];
-    # }))
+    pillow
   ];
 
   src = fetchFromGitHub {
